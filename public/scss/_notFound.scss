@@ -1,0 +1,16 @@
+
+.search-not-found {
+    margin-top: 10%;
+    .search-input>div i {
+        font-size: 1.5em;
+    }
+    .search-input>div i:before {
+        font-weight: bold;
+    }
+    .search-input:hover>div i:before{
+        color: $main-color !important;
+    }
+    input#search-input::placeholder {
+         color: #000;;
+    }
+}

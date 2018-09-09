@@ -1,0 +1,62 @@
+.sign-title {
+    height: 200px;
+    label.sign-lbl-title {
+        color: $main-white;
+        font-size: 2em;
+        font-family: 'Google San', sans-serif !important;
+    }
+}
+
+.sign-form {
+    background-color: $main-white;
+    height: calc(100vh - 265px);
+    .sign-info {
+        form {
+            width: 100%;
+            float: left;
+            .div-text-field {
+                margin-bottom: 15px;
+            }
+            .phone-code {
+                width: 15% !important;
+                margin-top: 21px !important;
+            }
+            .phone-number {
+                width: 85% !important;
+            }
+            .btn-sign{
+                width: 50%;
+                margin: 0px !important;
+            }
+        }
+        .div-support {
+            text-align:  right;
+        }
+        img.guard-icon {
+            width: 45%;
+        }
+        .sign-in-oAuth {
+            width:  50%;
+            margin:  0px 10px;
+            text-align:  right;
+            i.mdi {
+                font-size: 1.7em;
+                color: $main-font-color;
+            }
+            .btn-icon {
+                border-radius:  0px;
+                border-bottom: solid 1px $main-font-color;
+                margin: 0px 5px;
+                max-width:  36px !important;
+                min-width:  unset;
+            }
+            .btn-icon:hover {
+                border-bottom: solid 1px $main-color;
+                color: $main-color;
+            }
+            .btn-icon:hover i.mdi{
+                color: $main-color;
+            }
+        }
+    }
+}

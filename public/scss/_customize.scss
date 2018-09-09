@@ -1,0 +1,103 @@
+//Todo: Button
+button.my-btn {
+    border-radius: 2px !important;
+    background-color: $main-color;
+    color: white;
+    margin: 0px 5px !important;
+}
+
+button.my-btn:not(.btn-link):not(.btn-border):hover {
+    background-color: $hover-main-color;
+}
+
+button.my-btn.btn-border {
+    background-color: inherit;
+    border: solid 2px $main-color;
+    height: 36px;
+    line-height: 1px;
+}
+
+button.my-btn.btn-border:hover {
+    color: $main-color;
+}
+button.btn-shadow{
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+}
+.main-color {
+    color: $main-color;
+}
+
+button {
+    text-transform: unset !important;
+}
+
+button.color-w {
+    color: $main-white
+}
+
+button.no-bgc:hover{
+    background-color: rgba(247, 247, 247, 0.1);
+}
+
+//Todo: Text Field
+.my-text-field>label,
+.my-text-field>label+div>input,
+.my-label-input,
+.select-form-control,
+.my-form-control>label+div,
+div.my-input {
+    font-weight: bold;
+    color: $main-font-color !important;
+}
+div.my-input:hover:before,
+div.my-input:after,
+.my-text-field>label+div:hover:before,
+.my-text-field>label+div:after,
+.my-form-control>label+div:hover:before,
+.my-form-control>label+div:after,
+.select-form-control:hover:before,
+.select-form-control:after {
+    border-bottom: 2px solid $main-color !important;
+}
+
+.my-text-field {
+    [class*="MuiFormLabel-focused"] {
+        color: $main-color !important;
+        font-weight: bold !important;
+    }
+}
+.my-form-control {
+    [class*="MuiFormLabel-focused"] {
+        color: $main-color !important;
+        font-weight: bold !important;
+    }
+}
+.my-form-control {
+    margin: 5px 10px !important;
+    width: 50%;
+    button.my-view-pass {
+        width: 30px;
+        height: 30px;
+        border-radius: 2px;
+        margin-bottom: 5px;
+    }
+}
+
+//Todo: Dialog
+.dialog-big-title>h2 {
+    color:   $main-color;
+}
+.alert-content-div {
+    padding-bottom: unset !important;
+}
+.alert-content {
+    text-align:  center;
+    font-weight: bold !important;
+}
+button.my-btn-alert {
+    color:  $main-color;
+    font-weight: bold;
+}
+.my-alert>div+div {
+    min-width: 50%;
+}

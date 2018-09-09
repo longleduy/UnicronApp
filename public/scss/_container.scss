@@ -1,0 +1,29 @@
+.main-container {
+    .container {
+        min-height: calc(100vh - 50px);
+        .main-home-public {
+            flex-direction: column;
+            padding-bottom: $header-height;
+            .home-public {
+                flex-direction: column;
+                .home-public-title {
+                    color: $main-white;
+                    font-family: 'Contempory' !important;
+                    text-align: center;
+                    font-size: 1.5em;
+                }
+            }
+            .home-public-footer {
+                .home-public-list-icon {
+                    position: absolute;
+                    bottom: 0;
+                    right: 15px;
+                    i.material-icons {
+                        color: #404040;
+                        margin: 0px 3px !important;
+                    }
+                }
+            }
+        }
+    }
+}

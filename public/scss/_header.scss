@@ -1,0 +1,17 @@
+.main-header {
+    .header {
+        height: $header-height;
+        .my-app-bar {
+            background-color: inherit;
+            box-shadow:  unset;
+            .sign-btn {
+                position:  absolute;
+                right: 10px;
+                button>span{
+                    font-weight: bold
+                }
+            }
+        }
+        
+    }
+}

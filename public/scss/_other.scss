@@ -1,0 +1,134 @@
+div#root {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url('../images/background/back-ground.png');
+    background-size: 100%;
+    background-repeat: round;
+    background-attachment: fixed;
+}
+form{
+    width: 100%;
+}
+.flex-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-div-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.flex-div-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.btn-div {
+    margin: 10px !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.material-icons {
+    font-family: 'Material Icons' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.div-2-text-field {
+    .my-text-field {
+        margin: 5px 10px;
+        width: 50%;
+    }
+    .my-form-control.phone-code {
+        width: 50%;
+        margin: 5px 10px;
+    }
+}
+
+.div-1-text-field {
+    .my-text-field {
+        margin: 5px 10px;
+        width: 100%;
+    }
+}
+
+.example-enter {
+    opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+    opacity: 1;
+}
+
+.example-leave.example-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
+.example-appear {
+    opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+    opacity: 1;
+    transition: opacity 400ms ease-in;
+}
+span.demo {
+    width: 100%;
+    float: left;
+}
+.my-btn.btn-link {
+    background-color:  unset;
+    color:  $main-font-color;
+    max-height: 30px !important;
+    min-height: 25px;
+    font-weight: bold;
+    line-height:  1;
+}
+.my-btn.btn-link:hover {
+    color: $main-color;
+}
+.w-100{
+    width: 100%
+}
+
+label.error-label{
+    color: red !important;
+}
+form label[name=warning-label]{
+    color: red !important;
+}
+form div input.warning-label{
+    color: red !important;
+}
