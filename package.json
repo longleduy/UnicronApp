@@ -9,7 +9,7 @@
     "start_client": "webpack-dev-server --https --key ./ssl/server.key --cert ./ssl/server.crt",
     "start_server": "nodemon  ./server.js --exec babel-node ",
     "debug": "nodemon --nolazy --inspect-brk=8000 babel-node server.js",
-    "test": "nodemon --exec mocha --timeout 10000 --require babel-register ./test/mainTestTDD.js"
+    "test": "nodemon --exec mocha --timeout 10000 --require @babel/register ./test/account_test.js"
   },
   "repository": {
     "type": "git",

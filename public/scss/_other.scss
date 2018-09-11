@@ -4,9 +4,11 @@ div#root {
     background-repeat: round;
     background-attachment: fixed;
 }
-form{
+
+form {
     width: 100%;
 }
+
 .flex-div {
     display: flex;
     flex-direction: column;
@@ -96,6 +98,7 @@ a {
     opacity: 0.01;
     transition: opacity 300ms ease-in;
 }
+
 .example-appear {
     opacity: 0.01;
 }
@@ -104,31 +107,50 @@ a {
     opacity: 1;
     transition: opacity 400ms ease-in;
 }
+
 span.demo {
     width: 100%;
     float: left;
 }
+
 .my-btn.btn-link {
-    background-color:  unset;
-    color:  $main-font-color;
+    background-color: unset;
+    color: $main-font-color;
     max-height: 30px !important;
     min-height: 25px;
     font-weight: bold;
-    line-height:  1;
+    line-height: 1;
 }
+
 .my-btn.btn-link:hover {
     color: $main-color;
 }
-.w-100{
+
+.w-100 {
     width: 100%
 }
 
-label.error-label{
+label.error-label {
     color: red !important;
 }
-form label[name=warning-label]{
+
+form label[name=warning-label] {
     color: red !important;
 }
-form div input.warning-label{
+
+form div input.warning-label {
     color: red !important;
+}
+
+.my-progress {
+    width: 100%;
+    background-color: rgba(255, 59, 0, .3);
+}
+
+.my-progress>div {
+    background-color: #ff3b00;
+}
+.my-progress-cicle {
+    color: white !important;
+    position:  absolute;
 }

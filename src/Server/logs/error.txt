@@ -1,0 +1,63 @@
+09/10/2018 23:57:05 : MongoError: E11000 duplicate key error collection: UnicronDB.account_infors index: email_1 dup key: { : "longldseatechit@gmail.com" }
+    at Function.create (D:\jsDev\Project\UnicronApp\node_modules\mongodb-core\lib\error.js:43:12)
+    at toError (D:\jsDev\Project\UnicronApp\node_modules\mongodb\lib\utils.js:149:22)
+    at coll.s.topology.insert (D:\jsDev\Project\UnicronApp\node_modules\mongodb\lib\operations\collection_ops.js:828:39)
+    at D:\jsDev\Project\UnicronApp\node_modules\mongodb-core\lib\connection\pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+09/10/2018 23:57:07 : MongoError: E11000 duplicate key error collection: UnicronDB.account_infors index: email_1 dup key: { : "longldseatechit@gmail.com" }
+    at Function.create (D:\jsDev\Project\UnicronApp\node_modules\mongodb-core\lib\error.js:43:12)
+    at toError (D:\jsDev\Project\UnicronApp\node_modules\mongodb\lib\utils.js:149:22)
+    at coll.s.topology.insert (D:\jsDev\Project\UnicronApp\node_modules\mongodb\lib\operations\collection_ops.js:828:39)
+    at D:\jsDev\Project\UnicronApp\node_modules\mongodb-core\lib\connection\pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+09/10/2018 23:57:08 : MongoError: E11000 duplicate key error collection: UnicronDB.account_infors index: email_1 dup key: { : "longldseatechit@gmail.com" }
+    at Function.create (D:\jsDev\Project\UnicronApp\node_modules\mongodb-core\lib\error.js:43:12)
+    at toError (D:\jsDev\Project\UnicronApp\node_modules\mongodb\lib\utils.js:149:22)
+    at coll.s.topology.insert (D:\jsDev\Project\UnicronApp\node_modules\mongodb\lib\operations\collection_ops.js:828:39)
+    at D:\jsDev\Project\UnicronApp\node_modules\mongodb-core\lib\connection\pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+09/10/2018 23:57:09 : MongoError: E11000 duplicate key error collection: UnicronDB.account_infors index: email_1 dup key: { : "longldseatechit@gmail.com" }
+    at Function.create (D:\jsDev\Project\UnicronApp\node_modules\mongodb-core\lib\error.js:43:12)
+    at toError (D:\jsDev\Project\UnicronApp\node_modules\mongodb\lib\utils.js:149:22)
+    at coll.s.topology.insert (D:\jsDev\Project\UnicronApp\node_modules\mongodb\lib\operations\collection_ops.js:828:39)
+    at D:\jsDev\Project\UnicronApp\node_modules\mongodb-core\lib\connection\pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+09/11/2018 00:16:10 : MongoError: E11000 duplicate key error collection: UnicronDB.account_infors index: email_1 dup key: { : "longldseatechit@gmail.com" }
+    at Function.create (D:\jsDev\Project\UnicronApp\node_modules\mongodb-core\lib\error.js:43:12)
+    at toError (D:\jsDev\Project\UnicronApp\node_modules\mongodb\lib\utils.js:149:22)
+    at coll.s.topology.insert (D:\jsDev\Project\UnicronApp\node_modules\mongodb\lib\operations\collection_ops.js:828:39)
+    at D:\jsDev\Project\UnicronApp\node_modules\mongodb-core\lib\connection\pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+09/11/2018 00:16:11 : MongoError: E11000 duplicate key error collection: UnicronDB.account_infors index: email_1 dup key: { : "longldseatechit@gmail.com" }
+    at Function.create (D:\jsDev\Project\UnicronApp\node_modules\mongodb-core\lib\error.js:43:12)
+    at toError (D:\jsDev\Project\UnicronApp\node_modules\mongodb\lib\utils.js:149:22)
+    at coll.s.topology.insert (D:\jsDev\Project\UnicronApp\node_modules\mongodb\lib\operations\collection_ops.js:828:39)
+    at D:\jsDev\Project\UnicronApp\node_modules\mongodb-core\lib\connection\pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+09/11/2018 00:16:12 : MongoError: E11000 duplicate key error collection: UnicronDB.account_infors index: email_1 dup key: { : "longldseatechit@gmail.com" }
+    at Function.create (D:\jsDev\Project\UnicronApp\node_modules\mongodb-core\lib\error.js:43:12)
+    at toError (D:\jsDev\Project\UnicronApp\node_modules\mongodb\lib\utils.js:149:22)
+    at coll.s.topology.insert (D:\jsDev\Project\UnicronApp\node_modules\mongodb\lib\operations\collection_ops.js:828:39)
+    at D:\jsDev\Project\UnicronApp\node_modules\mongodb-core\lib\connection\pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+09/11/2018 00:16:13 : MongoError: E11000 duplicate key error collection: UnicronDB.account_infors index: email_1 dup key: { : "longldseatechit@gmail.com" }
+    at Function.create (D:\jsDev\Project\UnicronApp\node_modules\mongodb-core\lib\error.js:43:12)
+    at toError (D:\jsDev\Project\UnicronApp\node_modules\mongodb\lib\utils.js:149:22)
+    at coll.s.topology.insert (D:\jsDev\Project\UnicronApp\node_modules\mongodb\lib\operations\collection_ops.js:828:39)
+    at D:\jsDev\Project\UnicronApp\node_modules\mongodb-core\lib\connection\pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+09/11/2018 00:16:14 : MongoError: E11000 duplicate key error collection: UnicronDB.account_infors index: email_1 dup key: { : "longldseatechit@gmail.com" }
+    at Function.create (D:\jsDev\Project\UnicronApp\node_modules\mongodb-core\lib\error.js:43:12)
+    at toError (D:\jsDev\Project\UnicronApp\node_modules\mongodb\lib\utils.js:149:22)
+    at coll.s.topology.insert (D:\jsDev\Project\UnicronApp\node_modules\mongodb\lib\operations\collection_ops.js:828:39)
+    at D:\jsDev\Project\UnicronApp\node_modules\mongodb-core\lib\connection\pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)

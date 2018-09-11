@@ -4,7 +4,7 @@ import { Route, Switch } from 'react-router-dom'
 
 import NotFoundForm from './publicForm/NotFoundForm.jsx'
 
-import * as RoutesFunc from '../utils/RoutesFunc.js'
+import * as RoutesFunc from '../utils/routes_func.js'
 
 export default class ContainerForm extends Component {
     constructor(props) {

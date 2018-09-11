@@ -4,3 +4,4 @@
 #production
 /dist
 /public/font-awesome
+/src/Server/logs

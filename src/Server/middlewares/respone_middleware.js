@@ -8,5 +8,5 @@ export const serverRespone = (req, res, next) => {
     else {
         message = res.locals.message;
     }
-    res.status(200).json({ data, message });
+    res.status(status).json({ data, message });
 }

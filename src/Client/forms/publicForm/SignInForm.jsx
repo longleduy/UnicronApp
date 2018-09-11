@@ -18,7 +18,7 @@ import DialogContent from '@material-ui/core/DialogContent'
 import DialogContentText from '@material-ui/core/DialogContentText'
 import Slide from '@material-ui/core/Slide'
 //Todo: Js
-import * as Validate from '../../utils/js/Validate.js'
+import * as Validate from '../../utils/js/validate.js'
 
 function Transition(props) {
   return <Slide direction="up" {...props} />;

@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 import chalk from 'chalk'
-
+mongoose.set('useCreateIndex', true);
 mongoose.connect('mongodb://localhost/UnicronDB',{ useNewUrlParser: true });
 const db = mongoose.connection;
 db.on('err',()=>{

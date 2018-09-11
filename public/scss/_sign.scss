@@ -10,6 +10,9 @@
 .sign-form {
     background-color: $main-white;
     height: calc(100vh - 265px);
+    .sign-in-right-div{
+        padding: 0px 30px;
+    }
     .sign-info {
         form {
             width: 100%;
@@ -58,5 +61,21 @@
                 color: $main-color;
             }
         }
+        label.sign-success {
+            color: $main-color;
+            font-weight:  bold;
+            font-size: 30px;
+            padding-bottom: 30px;
+        }
+        label.email-lbl {
+            color: $main-color;
+        }
     }
+}
+.email-exist>label {
+    color:  red !important;
+}
+
+.email-exist>label+div>input {
+    color:  red !important;
 }
