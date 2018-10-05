@@ -1,17 +1,107 @@
+.private-header.main-header {
+    background-color: #2b2928;
+    z-index: 9999;
+}
 .main-header {
+    position: fixed;
+    width: 100%;
     .header {
         height: $header-height;
         .my-app-bar {
             background-color: inherit;
-            box-shadow:  unset;
+            box-shadow: unset;
             .sign-btn {
-                position:  absolute;
+                position: absolute;
                 right: 10px;
-                button>span{
+                button>span {
                     font-weight: bold
                 }
             }
+            button.menu {
+                transition: .5s;
+            }
+            button.menu:hover {
+                color: $main-color;
+                background-color: unset;
+            }
+            a.active {
+                button {
+                    color: $main-color;
+                }
+            }
+            .left-toolbar {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                height: 64px;
+                img {
+                    max-height: 50%;
+                    border-radius: 4px;
+                }
+                label.profile-name {
+                    font-size: .7em;
+                    margin-left: 10px;
+                    color: white;
+                    font-weight: bold;
+                }
+                .img-div {
+                    height: 64px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    label.notification {
+                        font-size: .6em;
+                        background-color: $main-color;
+                        position: absolute;
+                        width: 17px;
+                        height: 17px;
+                        line-height: 17px;
+                        text-align: center;
+                        border: solid 1px #ca3103;
+                        border-radius: 50%;
+                        top: 7px;
+                        right: -6px;
+                    }
+                }
+            }
         }
-        
     }
+}
+
+div#long-menu {
+    margin-top: 30px;
+    li:hover {
+        color: white;
+        background-color: hsl(14, 96%, 57%);
+    }
+    i.edit-icon {
+        margin-right: 5px;
+    }
+    li a {
+        color: unset;
+        display: flex;
+    }
+}
+.edit-bar a {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    color: #151414;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.edit-bar a:hover {
+    color: white;
+    background-color: #ff3b00;
+}
+.edit-bar {
+    width: auto;
+    overflow: hidden;
+}
+.test>div+div {
+    transition: transform 0ms cubic-bezier(0, 0, 0.2, 1) 0ms !important;
 }

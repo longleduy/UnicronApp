@@ -1,0 +1,125 @@
+img.banner-img {
+    width: 100%;
+}
+
+.lib-btn {
+    min-width: 180px !important;
+    border-radius: unset !important;
+    transition: .2s !important;
+    font-size: 1.1em !important;
+    padding: 15px 0px !important;
+    font-weight: bold !important;
+}
+
+.lib-btn:hover {
+    background-color: #212020 !important;
+}
+
+.post-list {
+    .menu-list {
+        max-height: 50px;
+        width: 100%;
+        max-width: unset;
+        text-align: center;
+        .menu-list-btn.hover2 span i {
+            margin-right: 5px;
+            transition: .3s;
+        }
+        .menu-list-btn.hover2 span label {
+            transition: .3s;
+        }
+        a {
+            padding: 10px 0px;
+            position: relative;
+        }
+        .menu-list-btn.hover2 span {
+            font-size: 1.5em;
+        }
+        .menu-list-btn.hover2 {
+            width: 10%;
+            cursor: pointer;
+            transition: .3s;
+        }
+        .menu-list-btn.hover2:hover {
+            background-color: unset !important;
+        }
+        .menu-list-btn.hover2:hover span i,
+        .menu-list-btn.hover2:hover span label {
+            color: $main-color !important;
+        } // a.active-menu-list-link:before {
+        //     content: "";
+        //     background-color: $main-color;
+        //     height: 2px;
+        //     width: 49%;
+        //     position: absolute;
+        //     bottom: 0;
+        //     right: 22%;
+        //     color: #ccc;
+        // }
+        a.active-menu-list-link .menu-list-btn.hover2 span i {
+            color: $main-color;
+        }
+        a.active-menu-list-link .menu-list-btn.hover2 span label {
+            color: $main-color !important;
+        } //Todo: Posts
+        .border {
+            border: solid 1px #ccc;
+        }
+        .posts-list {
+            display: flex;
+            margin: 10px 0px 20px 0px;
+            .posts-item {
+                .div-img img.avatar {
+                    width: 100%;
+                    border-radius: 50%;
+                }
+                .div-img {
+                    width: 40%;
+                }
+                .content-posts-item {
+                    text-align: left;
+                    padding: 10px;
+                }
+                .time-posts-item,
+                .role-posts-item {
+                    text-align: left;
+                    padding: 0px 15px;
+                    font-size: .8em;
+                    i {
+                        margin: 0px 5px;
+                        opacity: .5;
+                    }
+                    i.mdi.mdi-clock.w {
+                        margin-left: 20px;
+                    }
+                    label {
+                        opacity: .5;
+                    }
+                }
+            }
+            .comment-item {
+                text-align: left;
+                padding: 0px 15px;
+                label:first-child {
+                    color: #edff00 !important;
+                    font-size: .9em;
+                }
+                label:nth-child(2) {
+                    font-size: .8em;
+                    padding: 5px 0px;
+                    opacity: .7;
+                    max-height: 45px;
+                    overflow: hidden;
+                }
+            }
+            .like-item {
+                i {
+                    font-size: 1.2em
+                }
+                .liked{
+                    color: #edff00 !important;
+                }
+            }
+        }
+    }
+}

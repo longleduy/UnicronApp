@@ -1,3 +1,4 @@
+import jwt from 'jsonwebtoken'
 export const getFormattedDate = (date)=>{
     let year = date.getFullYear();
   
@@ -16,4 +17,7 @@ export const getFormattedDate = (date)=>{
     let second = date.getSeconds().toString();
     second = second.length > 1 ? second : '0' + second;
     return `${month}/${day}/${year } ${hour}:${minutes}:${second}`;
+  }
+  export const genJWT = (payload,secretKey,expireTime) => {
+    return jwt.sign(payload, secretKey, { expiresIn: expireTime })
   }

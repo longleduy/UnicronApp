@@ -2,7 +2,7 @@ const path = require('path')
 // TODO: Export file css ra file riêng
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-
+const {HOST,CLIENT_PORT} = require('./src/Client/utils/contant/uri_contants')
 const VENDOR_LIBS = [
     "jquery",
     "react",
@@ -27,7 +27,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[chunkhash].js',
         //Todo: Sử dụng cho nested route (môi trường dev), mất cả buổi sáng vọc, khổ vlin
-        publicPath: 'https://localhost:8086/'
+        publicPath: `${HOST}:${CLIENT_PORT}/`
     },
     module: {
         rules: [

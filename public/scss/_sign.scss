@@ -62,13 +62,13 @@
             }
         }
         label.sign-success {
-            color: $main-color;
+            color: $main-color !important;
             font-weight:  bold;
             font-size: 30px;
             padding-bottom: 30px;
         }
         label.email-lbl {
-            color: $main-color;
+            color: $main-color !important;
         }
     }
 }

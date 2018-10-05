@@ -1,0 +1,23 @@
+.index-div {
+    padding-top: 30px;
+    .menu-role-title {
+        max-width: 5%;       
+    }
+    .menu-role-title>span>label {
+        font-weight: bold;
+    }
+    
+    .menu-role-title>span:before {
+        content: "";
+        height: 90%;
+        position: absolute;
+        background-color: #ccc;
+        width: 1px;
+        right: 0;
+    }
+    
+    .menu-role-title>span {
+        position: relative;
+    }
+
+}

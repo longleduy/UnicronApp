@@ -1,4 +1,7 @@
 //Todo: Button
+label,i.w {
+    color: $main-white !important;
+}
 button.my-btn {
     border-radius: 2px !important;
     background-color: $main-color;
@@ -22,6 +25,11 @@ button.my-btn.btn-border:hover {
 }
 button.btn-shadow{
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+
+}
+.box-shadow{
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+    background-color: rgba(43, 41, 40, .9) !important;
 }
 .main-color {
     color: $main-color;
@@ -71,6 +79,19 @@ div.my-input:after,
         color: $main-color !important;
         font-weight: bold !important;
     }
+}
+.my-drawer>div {
+    background-color: unset !important
+}
+.my-drawer>div+div {
+    box-shadow: unset
+}
+.my-drawer>div+div>div>div a {
+    color: $main-white;
+    outline: unset
+}
+.my-drawer>div+div>div>div,.my-drawer>div+div>div {
+    outline: unset
 }
 .my-form-control {
     margin: 5px 10px !important;

@@ -3,6 +3,7 @@ import Bluebird from 'bluebird'
 import chalk from 'chalk'
 import redisConnect from 'connect-redis'
 import session from 'express-session'
+import { throws } from 'assert';
 
 Bluebird.promisifyAll(redis.RedisClient.prototype)
 Bluebird.promisifyAll(redis.Multi.prototype)
@@ -12,8 +13,11 @@ export const client = redis.createClient()
 
 client.on('connect', function () {
     if (process.env.NODE_ENV != 'test') {
-        console.log(chalk.red('RedisDB') + ' connecting ' + chalk.green('✓'));
+        console.log(`🛡️  ${chalk.red('RedisDB')} connecting...`)
     }
+});
+client.on("error", function (err) {
+    throw err;
 });
 export const redisServer = session({
     secret: "longld",
@@ -22,6 +26,7 @@ export const redisServer = session({
     store: new RedisStore({ host: 'localhost', port: 6379, client: client }),
     cookie: {
         //must be served over https
+        httpOnly: true,
         secure: false,
         maxAge: 1000 * 60 * 60 * 24 * 3,
         expires: false

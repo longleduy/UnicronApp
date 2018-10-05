@@ -1,10 +1,9 @@
-div#root {
+div.main {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url('../images/background/back-ground.png');
     background-size: 100%;
     background-repeat: round;
     background-attachment: fixed;
 }
-
 form {
     width: 100%;
 }
@@ -15,7 +14,9 @@ form {
     justify-content: center;
     align-items: center;
 }
-
+.flex{
+    display: flex;
+}
 .flex-div-col {
     display: flex;
     flex-direction: column;
@@ -100,17 +101,17 @@ a {
 }
 
 .example-appear {
-    opacity: 0.01;
+    opacity: 0.5;
 }
 
 .example-appear.example-appear-active {
     opacity: 1;
-    transition: opacity 400ms ease-in;
+    transition: opacity 150ms ease-in;
 }
-
 span.demo {
     width: 100%;
     float: left;
+    height: 100%;
 }
 
 .my-btn.btn-link {
@@ -150,7 +151,162 @@ form div input.warning-label {
 .my-progress>div {
     background-color: #ff3b00;
 }
+
 .my-progress-cicle {
     color: white !important;
-    position:  absolute;
+    position: absolute;
+}
+
+.error-div {
+    background-color: #ffd5d5;
+    position: relative;
+
+}
+
+.admin-log.flex-div-row {
+    width: 85%;
+}
+
+.admin-log.flex-div-row label {
+    color: #e31711;
+}
+
+.error-div-img {
+    img.error-img1 {
+        width: 15%;
+    }
+}
+
+.error-div-img {
+    img.error-img2 {
+        margin-left: 50px;
+    }
+}
+.btn-icon-2{
+    padding: 5px !important;
+    min-width: unset !important;
+}
+.admin-view-log i {
+    color: #e31711;
+}
+
+.admin-view-log {
+    position: absolute !important;
+    top: 0px;
+    left: 0px;
+}
+button.btn-complete{
+    background-color: green !important
+}
+.private {
+    background-color: #2b2928;
+}
+// .main-sign {
+//     margin-top: 64px;
+// }
+.lib-info {
+    width: unset !important;
+}
+.main-container {
+    padding-top: 64px;
+}
+.lib-main-div {
+    padding: 0px 50px;
+}
+.lib-div {
+    margin: 15px 0px !important;
+    min-height: 200px;
+    .lib-info.flex-div-col label {
+        color: #a2a0a0;
+    }
+}
+span.lib-role lable {
+    font-size: .9em;
+}
+
+span.lib-role label {
+    font-size: .8em;
+    margin-right: 10px;
+}
+label.lib-featured {
+    font-size: .7em;
+}
+.lib-icon img {
+    width: 85%;
+}
+.lib-div:hover {
+    background-color: rgba(162, 160, 160, .1);
+}
+.js-unset{
+    justify-content: unset !important;
+}
+.ali-unset{
+    align-items: unset !important;
+}
+.loading {
+    color: $main-white !important;
+}
+.not-found label:first-child {
+    font-size: 30px;
+}
+
+.not-found label:nth-child(2) {
+    font-size: 100px;
+    margin-top: 30px;
+}
+
+.not-found label:last-child {
+    font-size: 40px;
+}
+.h100{
+    height: 100% !important;
+}
+.margin-header{
+    margin-bottom: 64px !important;
+}
+.main-height{
+    height: calc(100vh - 64px);
+}
+.main-height2{
+    height: calc(100vh - 50px);
+    padding-top: 15px;
+}
+.container-div{
+    padding: 0px 50px
+}
+.my-progress-bar {
+    height: 2px !important;
+    background-color: unset !important;
+}
+
+.my-progress-bar>div {
+    background-color: $main-color !important;
+}
+@import 'loaders.css/src/animations/ball-pulse.scss';
+
+.loader-hidden {
+  display: none;
+}
+.loader-active {
+  display: block;
+}
+.loader-inner.ball-pulse div {
+    width: 10px !important;
+    height: 10px !important;
+    background-color: $main-white !important;
+}
+.loader {
+    height: unset !important;
+}
+.loader.loading-btn>div div {
+    height: 8px !important;
+    width: 8px !important;
+}
+.error-snackbar>div {
+    background-color: #e22323;
+
+}
+#message-id i{
+    font-size: 1.3em !important;
+    margin-right: 5px
 }

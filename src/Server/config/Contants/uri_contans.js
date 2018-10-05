@@ -1,0 +1,5 @@
+export const HOST = 'https://192.168.10.117'
+//export const HOST = 'https://192.168.0.100'
+export const CLIENT_PORT = '8086'
+export const SERVER_PORT = '4000'
+export const GRAPHQL_ENDPOINT = 'graphql'

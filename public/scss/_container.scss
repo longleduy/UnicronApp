@@ -1,9 +1,7 @@
 .main-container {
     .container {
-        min-height: calc(100vh - 50px);
         .main-home-public {
             flex-direction: column;
-            padding-bottom: $header-height;
             .home-public {
                 flex-direction: column;
                 .home-public-title {
@@ -25,5 +23,29 @@
                 }
             }
         }
+    }
+    .scroll-icon {
+        font-size: 4em;
+        position: fixed;
+        padding: 0px;
+        top: calc(100vh - 64px);
+        right: 0;
+        cursor: pointer;
+        border-radius: 0px;
+        min-height: unset;
+        max-height: 25px;
+        line-height: 25px;
+    }
+    .scroll-icon:hover {
+        color: $main-color !important;
+        background-color: unset !important
+    }
+    .scroll-icon i {
+        font-size: .8em;
+        height: 25px;
+        line-height: 25px;
+    }
+    .scroll-icon-top {
+        top: calc(100vh - 90px);
     }
 }

@@ -62,6 +62,29 @@ export const validatePassWord = (e, otherPassWord, text) => {
         return true;
     }
 }
+export const dataFormInvalid = (field, errorMessage) => {
+    $(`#${field}`).parent().prev('label').attr('name', 'warning-label');
+    $(`#${field}`).addClass('warning-label');
+    $(`#${field}`).parent().prev('label').text(errorMessage);
+}
+export const cleanError = (e, text) => {
+    if ($(e.target).parent().prev('label').attr('name') === 'warning-label') {
+        $(e.target).parent().prev('label').removeAttr('name')
+    }
+    if ($(e.target).hasClass('warning-label')) {
+        $(e.target).removeClass('warning-label');
+        $(e.target).parent().prev('label').text(text);
+    }
+}
+export const cleanErrorById = (id, text) => {
+    if ($(`#${id}`).parent().prev('label').attr('name') === 'warning-label') {
+        $(`#${id}`).parent().prev('label').removeAttr('name')
+    }
+    if ($(`#${id}`).hasClass('warning-label')) {
+        $(`#${id}`).removeClass('warning-label');
+        $(`#${id}`).parent().prev('label').text(text);
+    }
+}
 export const verifyEmailAddress = (target, status) => {
     if (status === 'exist') {
         target.parent().parent().addClass('email-exist')

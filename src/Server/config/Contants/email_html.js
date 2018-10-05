@@ -20,8 +20,8 @@ export const htmlSignUpVerify = (to, urlEndPoint) => {
                     <label>Thanks for sign up! We just need you verify your email address to complete setting up your
                         account</label>
                     <!--  -->
-                    <a href="http://localhost:8000/account/email-address-verify/:${urlEndPoint}" style="text-decoration: unset;"><input type="button" style="display: block; margin-top: 50px;font-family: 'Google Sans' !important;    padding: 8px;
-                        background-color: #ff3b00;
+                    <a href='https://192.168.10.117:4000/graphql/?query={verifyEmailAddress(secretKey: "${urlEndPoint}"){status}}' style="text-decoration: unset;"><input type="button" style="display: block; margin-top: 50px;font-family: 'Google Sans' !important;    padding: 8px;
+                    background-color: #ff3b00;
                         border: none;
                         border-radius: 3px;
                         box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);

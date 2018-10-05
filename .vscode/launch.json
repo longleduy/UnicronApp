@@ -6,9 +6,10 @@
             "request": "launch",
             "name": "Debug Server",
             "runtimeExecutable": "nodemon",
-            "program": "${workspaceFolder}/server.js",
+            "program": "${workspaceFolder}/src/Server/server.js",
             "protocol": "inspector",
             "stopOnEntry": false,
+            "timeout": 100000,
             "runtimeArgs": [
                 "--lazy",
                 "--require",
@@ -23,7 +24,7 @@
             "name": "Mocha Test",
             "runtimeExecutable": "nodemon",
             "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
-            "args": ["test/account_test.js", "--no-timeouts"],
+            "args": ["src/Server/test/main.js", "--no-timeouts"],
             "protocol": "inspector",
             "stopOnEntry": false,
             "cwd": "${workspaceRoot}",
@@ -39,7 +40,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Debug Client",
-            "url": "https://localhost:8086",
+            "url": "https://192.168.10.117:8086",
             "webRoot": "${workspaceFolder}"
         }
     ],
@@ -47,6 +48,10 @@
         {
             "name": "Debug Client & Server",
             "configurations": ["Debug Client", "Debug Server"]
+        },
+        {
+            "name": "Debug Mocha",
+            "configurations": [ "Debug Server","Mocha Test"]
         }
     ]
 }
