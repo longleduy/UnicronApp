@@ -5,4 +5,5 @@
 /dist
 /public/font-awesome
 /src/Server/logs
-/.vscode
+.vscode
+.env
